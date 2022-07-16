@@ -1,0 +1,500 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 600,
+    'GRAD' 200,
+    'opsz' 48
+}
+.logo {
+    font-size: 40px;
+    font-weight: 500;
+}
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+footer {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    position: relative;
+}
+.material-icons.md-16 { font-size: 16px; }
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-28 { font-size: 28px; }
+.material-icons.md-32 { font-size: 32px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+.cursor-pointer {
+    cursor: pointer;
+}
+.container-nav {
+    height: 104px;
+    width: 100%;
+    display: flex;
+    background-color: white;
+}
+.child-nav.uno-nav {
+    display: flex;
+    flex-basis: 25%;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    justify-content: center;
+    align-items: center;
+}
+.child-nav.dos-nav {
+    display: flex;
+    flex-basis: 50%;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    padding: 0px 50px;
+}
+.child-nav.dos-nav span {
+    white-space: nowrap;
+}
+.nav-search-input-2 {
+    display: none;
+    font-size: 16px;
+}
+.child-nav.uno-nav.right-nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border-left: 0px solid black;
+}
+.menu-nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    list-style: none;
+}
+.child-menu-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 25%;
+    border-left: 3px solid black;
+    font-size: 14px;
+}
+.material-symbols-outlined {
+    transform: scale(1.2);
+}
+.child-menu-nav:hover {
+    background-color: black;
+    color: white;
+    transition: background 0.5s, color 0.5s;
+    cursor: pointer;
+}
+.section-home {
+    width: 100%;
+    overflow: hidden;
+    top: 0px;
+    height: calc(100vh - 105px);
+    position: relative;
+}
+.section-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 5px -50px 5px 5px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+}
+.rebajas {
+    position: fixed;
+    bottom: 125px;
+    left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 20px 145px;
+    border: 3px solid black;
+    color: white;
+    transition: background 0.5s, color 0.5s;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    z-index: 0;
+}
+.rebajas:hover {
+    background-color: white;
+    color: black;
+}
+.ad-home {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: white;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 10px;
+    padding-bottom: 11px;
+    font-size: 22px;
+    font-weight: 600;
+    border-top: 3px solid black;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+}
+.section-hot-sale {
+    position: relative;
+    overflow-y: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    padding: 7% 100px 10%;
+}
+.section-hot-sale h1 {
+    font-size: 90px;
+    font-weight: 700;
+}
+.child-section-hot-sale {
+    flex-basis: 50%;
+    max-width: 50%;
+}
+.child-search-section-hot-sale {
+    flex-basis: 50%;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.child-search-title {
+    font-size: 18px;
+}
+.child-search-title span{
+    font-weight: 600;
+}
+.child-search-input p{
+    font-size: 25vw;
+    font-weight: 900;
+    text-align: left;
+    padding: 0;
+    border: none;
+    height: auto;
+    line-height: 1.2;
+    color: rgba(0, 0, 0, 0.2);
+    border-bottom: 3px solid black;
+}
+.child-search-row-buttons {
+    display: flex;
+    width: 100%;
+    margin-top: 25px;
+    justify-content: space-evenly;
+    align-items: center;
+    height: max-content;
+}
+.child-search-row-buttons p {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+}
+.child-search-button-1 {
+    margin: 0px 40px;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    transition: border 0.5s;
+}
+.child-search-button-1:hover {
+    border-bottom: 3px solid black;
+}
+.child-search-button-2 {
+    padding: 20px 40px;
+    transition: background 0.5s, color 0.5s;
+}
+.child-search-button-2:hover {
+    background-color: black;
+    color: white;
+}
+.section-best-seller {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+    padding: 5% 50px 5%
+}
+.section-best-seller h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.section-best-seller-products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+.section-best-seller-card-product {
+    position: relative;
+    flex-basis: 23%;
+    margin-bottom: 10px;
+    padding: 50px;
+    min-width: 250px;
+    background-color: black;
+    color: white;
+}
+.card-product-feature {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 13px;
+    left: 13px;
+}
+.card-product-box {
+    width: 14px;
+    height: 14px;
+    background-color: #e54449;
+    display: block;
+    margin-right: 5px;
+}
+.card-product-discount {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 15px 10px;
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+    font-size: 14px;
+}
+.card-product-code {
+    font-size: 9vw;
+    font-weight: 900;
+}
+.card-product-name {
+    margin-top: 5px;
+    font-size: 1.125rem;
+    list-style: 1.5;
+    font-weight: 700;
+    margin-bottom: .5rem;
+}
+.card-product-price {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1.125rem;
+    line-height: 1.5;
+}
+.price {
+    font-weight: 700;
+}
+.regular-price {
+    font-weight: 400;
+    line-height: 1.5;
+    color: #a1a1a1;
+    text-decoration: line-through;
+    font-size: 1rem;
+    margin-left: 5px;
+}
+.card-product-review {
+    margin-bottom: 10px;
+}
+.grade-stars {
+    display: flex;
+    justify-content: flex-start;
+}
+.star {
+    color: #ff9100;
+}
+.product-review-count {
+    font-size: 12px;
+    margin: 2px 5px;
+}
+.card-product-top {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+.card-product-features p {
+    margin-bottom: 5px;
+    font-size: 1rem;
+}
+@media (max-width: 1280px) {
+    .container-nav {
+        height: 80px;
+    }
+    .child-nav.uno-nav {
+        flex-basis: 32.5%;
+        flex-grow: 1;
+    }
+    .child-nav.dos-nav {
+        flex-basis: 35%;
+        flex-grow: 10;
+    }
+    .nav-search-input-1 {
+        display: none;
+    }
+    .nav-search-input-2 {
+        display: block;
+    }
+    .section-hot-sale h1 {
+        font-size: 60px;
+    }
+    .section-hot-sale {
+        align-items: flex-start;
+        display: flex;
+        width: 100%;
+        height: auto;
+        padding: 10px 75px;
+        flex-direction: column;
+    }
+    .child-search-input {
+        align-self: center;
+    }
+    .child-search-button-1 {
+        margin: 0px 10px;
+    }
+    .child-search-button-2 {
+        padding: 10px 10px;
+    }
+    .child-search-row-buttons {
+        margin-top: 10px;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .child-search-row-buttons p {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+    .child-search-section-hot-sale {
+        margin-top: 10px;
+        align-items: flex-start;
+    }
+    .section-best-seller-card-product {
+        position: relative;
+        flex-basis: 23%;
+        padding: 25px;
+    }
+    .card-product-discount {
+        padding: 10px 5px;
+    }
+    .product-review-count {
+        font-size: 8px;
+        margin: 4px 0px;
+    }
+}
+@media (max-width: 1024px) { 
+    .container-nav {
+        height: 55px;
+    }
+    .child-nav.uno-nav {
+        flex-basis: 55%;
+        flex-shrink: 5;
+    }
+    .child-nav.dos-nav {
+        flex-basis: 9.33%;
+        padding: 0 5px;
+        justify-content: center;
+    }
+    .nav-search-input-2 {
+        display: none;
+    }
+    .logo {
+        font-size: 28px;
+        font-weight: 500;
+    }
+    .rebajas {
+        position: fixed;
+        bottom: 225px;
+        left: 10%;
+        right: 10%;
+        font-size: 16px;
+        white-space: nowrap;
+    }
+    .ad-home {
+        width: 100%;
+        position: absolute;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        font-size: 16px;
+    }
+    .section-hot-sale h1 {
+        font-size: 30px;
+    }
+    .child-search-section-hot-sale {
+        flex-basis: 100%;
+        max-width: 100%;
+        width: 100%;
+    }
+    .section-hot-sale {
+        align-items: flex-start;
+        display: flex;
+        width: 100%;
+        height: auto;
+        padding: 10px 20px;
+        flex-direction: column;
+    }
+    .child-search-input {
+        align-self: center;
+    }
+    .child-search-button-1 {
+        margin: 0px 10px;
+    }
+    .child-search-button-2 {
+        padding: 10px 10px;
+    }
+    .child-search-row-buttons {
+        margin-top: 10px;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+    .child-search-row-buttons p {
+        font-size: 10px;
+    }
+    .child-search-section-hot-sale {
+        margin-top: 10px;
+        align-items: flex-start;
+    }
+    .section-best-seller {
+        padding: 20px;
+    }
+    .section-best-seller-card-product {
+        margin-bottom: 20px;
+        min-width: 160px;
+        max-height: 100%;
+        padding: 10px;
+    }
+    .card-product-code {
+        margin-top: 25px;
+        font-size: 5vw;
+    }
+    .card-product-name {
+        margin-top: 5px;
+        font-size: 1rem;
+    }
+    .card-product-features p {
+        margin-bottom: 0px;
+        font-size:0.8rem;
+    }
+    .card-product-discount {
+        font-size: 10px;
+    }
+}
