@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 24px;
+    font-family: system-ui, sans-serif;
+}
+.text-white {
+    color: white;
+    font-size: 28px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+.flex {
+    display: flex;
+}
+.justify-content-end {
+    justify-content: flex-end;
+}
+.align-items-end {
+    align-items: flex-end;
+}
+.justify-content-center {
+    justify-content: center;
+}
+.align-items-center {
+    align-items: center;
+}
+.parentContainer {
+    background-color: #079;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+.childContainer {
+    background-color: #a04;
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-basis: 15%;
+}
+.childContainer-middle {
+    background-color: #a04;
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-basis: 75%;
+}
+.childContainer-1 {
+    flex-basis: 70%;
+}
+.childContainer-2 {
+    flex-basis: 30%;
+}
+.childContainer-3 {
+    width: 100%;
+    height: 50%;
+}
+.backgroundColor-1 {
+    background-color: #F0223B;
+}
+.backgroundColor-2 {
+    background-color: #FA23A9;
+}
+.backgroundColor-3 {
+    background-color: #8D0E96;
+}
+.backgroundColor-4 {
+    background-color: #14E3B5;
+}
+.backgroundColor-5 {
+    background-color: #15967A;
+}
+.backgroundColor-6 {
+    background-color: #D72BE3;
+}
+.backgroundColor-7 {
+    background-color: #F34AFF;
+}
+.backgroundColor-8 {
+    background-color: #7BE32B;
+}
